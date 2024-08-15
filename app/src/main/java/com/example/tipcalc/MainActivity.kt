@@ -173,7 +173,7 @@ fun RoundTheTipRow(
 
 
 
-private fun calculateTip(amount: Double, tipPercent: Double, roundUp: Boolean): String {
+internal fun calculateTip(amount: Double, tipPercent: Double, roundUp: Boolean): String {
     var tip = tipPercent/100 * amount
     if(roundUp){
         tip = kotlin.math.ceil(tip)
